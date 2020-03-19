@@ -7,4 +7,4 @@ ADD src src
 ADD resources resources
 
 RUN pip install -r requirements.txt
-ENTRYPOINT python src/youtube-downloader.py
+ENTRYPOINT ["python", "src/youtube-downloader.py", "/resources"]
